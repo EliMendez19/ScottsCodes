@@ -1,9 +1,11 @@
 const validCodes = ['code1', 'code2', 'code3'];
-const submitBtn = document.getElementById('submit-btn');
+
+const redeemButton = document.getElementById('redeem-button');
 const codeInput = document.getElementById('code-input');
 
-submitBtn.addEventListener('click', function() {
-  const userCode = codeInput.value;
+redeemButton.addEventListener('click', function() {
+  const userCode = codeInput.value.trim();
+
   if (validCodes.includes(userCode)) {
     const webhookURL = 'https://discord.com/api/webhooks/1234567890/abcdefg'; // Replace with your own webhook URL
     const message = {content: `A user has redeemed the code ${userCode}.`};
@@ -16,4 +18,16 @@ submitBtn.addEventListener('click', function() {
   } else {
     alert('Invalid code.');
   }
+});
+
+const darkModeButton = document.getElementById('dark-mode-button');
+const lightModeButton = document.getElementById('light-mode-button');
+const body = document.querySelector('body');
+
+darkModeButton.addEventListener('click', function() {
+  body.classList.add('dark-mode');
+});
+
+lightModeButton.addEventListener('click', function() {
+  body.classList.remove('dark-mode');
 });
