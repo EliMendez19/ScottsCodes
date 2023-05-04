@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Code Site System</title>
+  <title>Scott's Basement | Redeem A Code</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="container">
-    <h1>Code Site System</h1>
-    <p>Enter your code below:</p>
-    <input type="text" id="code-input">
-    <button id="redeem-button">Redeem</button>
-    <button id="dark-mode-button">Dark mode</button>
-    <button id="light-mode-button">Light mode</button>
+  <div class="container">
+    <h1>Scott's Basement</h1>
+    <div class="input-wrapper">
+      <input type="text" id="code-input" placeholder="Enter your code...">
+      <input type="text" id="name-input" placeholder="Enter your name...">
+      <button id="redeem-btn">Redeem</button>
+    </div>
+    <div class="toggle-wrapper">
+      <button id="light-mode-btn">Light Mode</button>
+      <button id="dark-mode-btn">Dark Mode</button>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
