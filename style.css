@@ -1,66 +1,53 @@
 body {
-  background-color: #fff;
-  color: #000;
-  font-family: sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  background-color: #fafafa;
+  color: #222;
 }
 
-.container {
-  max-width: 600px;
+#container {
   margin: 0 auto;
-  padding: 2rem;
+  width: 400px;
   text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-label {
-  margin-bottom: 0.5rem;
-}
-
-input[type="text"] {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #000;
-  border-radius: 0.25rem;
+  font-size: 36px;
 }
 
 button {
-  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
   border: none;
-  border-radius: 0.25rem;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
   cursor: pointer;
+  border-radius: 8px;
 }
 
-button#redeem-btn {
-  background-color: #000;
+#redeem-button {
+  background-color: #4CAF50;
+}
+
+#dark-mode-button, #light-mode-button {
+  background-color: #555;
+}
+
+.dark-mode {
+  background-color: #222;
   color: #fff;
 }
 
-button#dark-mode-btn {
-  background-color: #000;
+.dark-mode button {
+  background-color: #666;
+}
+
+.dark-mode input {
+  background-color: #333;
   color: #fff;
-}
-
-button#light-mode-btn {
-  background-color: #fff;
-  color: #000;
-}
-
-.modes {
-  display: flex;
-  justify-content: center;
 }
