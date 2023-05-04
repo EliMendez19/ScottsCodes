@@ -1,4 +1,4 @@
-const validCodes = ['code1', 'code2', 'code3'];
+const validCodes = ['testmeboy', 'loleli', 'subtoelimendez19'];
 
 const redeemButton = document.getElementById('redeem-button');
 const codeInput = document.getElementById('code-input');
@@ -7,7 +7,7 @@ redeemButton.addEventListener('click', function() {
   const userCode = codeInput.value.trim();
 
   if (validCodes.includes(userCode)) {
-    const webhookURL = 'https://discord.com/api/webhooks/1234567890/abcdefg'; // Replace with your own webhook URL
+    const webhookURL = 'https://discord.com/api/webhooks/1103472689617838100/0QvS9NMwI57qHCzEQ7C9JZmn1ftE3x_HvAB3JrwOIYBq8cE8htVYjqfphmlskbU0t4RY'; // Replace with your own webhook URL
     const message = {content: `A user has redeemed the code ${userCode}.`};
     fetch(webhookURL, {
       method: 'POST',
