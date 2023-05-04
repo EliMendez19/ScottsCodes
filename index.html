@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Code Site System</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="container">
-    <h1>Code Site System</h1>
-    <p>Enter your code below:</p>
-    <input type="text" id="code-input">
-    <button id="redeem-button">Redeem</button>
-    <button id="dark-mode-button">Dark mode</button>
-    <button id="light-mode-button">Light mode</button>
-  </div>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <title>Code Redemption</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Code Redemption</h1>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="code">Code:</label>
+        <input type="text" id="code" name="code" required>
+        <button id="submit-btn" type="button">Redeem</button>
+      </form>
+      <div id="status"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
