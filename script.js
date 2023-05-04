@@ -21,5 +21,5 @@ function redeemCode() {
   // Check if the user's code is valid
   if (validCodes.includes(userCode)) {
     // If the code is valid, create a webhook bot and send a message to a Discord server
-    const webhookURL = 'https://discord.com/api/webhooks/1234567890/abcdefg'; // Replace with your own webhook URL
+    const webhookURL = 'https://discord.com/api/webhooks/1103472689617838100/0QvS9NMwI57qHCzEQ7C9JZmn1ftE3x_HvAB3JrwOIYBq8cE8htVYjqfphmlskbU0t4RY'; // Replace with your own webhook URL
     const message = {content: `${userName}
