@@ -1,7 +1,7 @@
 document.body.style.backgroundColor = "#343434"; // Replace with desired color code
 
 // Define an array of valid codes
-const validCodes = ['eliisgoated', 'hazemisbetter', 'impoor'];
+const validCodes = ['sc0ttl0v3sbutt3r', 'do', 'ball'];
 
 // Get form elements
 const nameField = document.getElementById('name');
