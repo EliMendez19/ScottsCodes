@@ -1,3 +1,4 @@
+document.body.style.backgroundColor = "#343434"; // Replace with desired color code
 // Define an array of valid codes
 const validCodes = ['eliisgoated', 'hazemisbetter', 'impoor'];
 
