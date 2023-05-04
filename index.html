@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Code Redemption System</title>
+  <meta charset="UTF-8">
+  <title>Code Redemption</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Code Redemption System</h1>
-    <div class="input-wrapper">
-      <input type="text" id="code-input" placeholder="Enter your code...">
-      <input type="text" id="name-input" placeholder="Enter your name...">
+    <h1>Code Redemption</h1>
+    <div class="form">
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name">
+      <label for="code">Enter your code:</label>
+      <input type="text" id="code">
       <button id="redeem-btn">Redeem</button>
     </div>
-    <div class="toggle-wrapper">
-      <button id="light-mode-btn">Light Mode</button>
-      <button id="dark-mode-btn">Dark Mode</button>
+    <div class="modes">
+      <button id="dark-mode-btn">Dark mode</button>
+      <button id="light-mode-btn">Light mode</button>
     </div>
   </div>
   <script src="script.js"></script>
