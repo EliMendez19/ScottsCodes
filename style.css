@@ -1,53 +1,70 @@
 body {
-  background-color: #fafafa;
-  color: #222;
+  background-color: #111;
+  color: #fff;
 }
 
-#container {
+.container {
+  max-width: 600px;
   margin: 0 auto;
-  width: 400px;
   text-align: center;
-  padding: 50px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  padding-top: 100px;
 }
 
 h1 {
-  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  width: 250px;
+}
+
+input[type="text"]:focus {
+  outline: none;
 }
 
 button {
-  background-color: #4CAF50;
+  padding: 10px 20px;
   border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  background-color: #fff;
+  color: #111;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
-  border-radius: 8px;
 }
 
-#redeem-button {
-  background-color: #4CAF50;
+.toggle-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
-#dark-mode-button, #light-mode-button {
-  background-color: #555;
-}
-
-.dark-mode {
-  background-color: #222;
+#dark-mode-btn {
+  background-color: #111;
   color: #fff;
+  margin-left: 10px;
 }
 
-.dark-mode button {
-  background-color: #666;
-}
-
-.dark-mode input {
+#dark-mode-btn:hover {
   background-color: #333;
-  color: #fff;
+}
+
+#light-mode-btn:hover {
+  background-color: #eee;
+  color: #111;
+}
+
+#redeem-btn:hover {
+  background-color: #eee;
+  color: #111;
 }
