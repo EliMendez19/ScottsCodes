@@ -2,7 +2,7 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #343434;
   color: #000000;
 }
 
@@ -23,7 +23,7 @@ button {
 }
 
 .dark-mode {
-  background-color: #000000;
+  background-color: #343434;
   color: #ffffff;
 }
 
