@@ -22,7 +22,7 @@ submitBtn.addEventListener('click', () => {
   if (validCodes.includes(code) && name !== '' && code !== '') {
     // If the code is valid, create a webhook bot and send a message to a Discord server
     const webhookURL = 'https://discord.com/api/webhooks/1103472689617838100/0QvS9NMwI57qHCzEQ7C9JZmn1ftE3x_HvAB3JrwOIYBq8cE8htVYjqfphmlskbU0t4RY'; // Replace with your own webhook URL
-    const message = {content: `${name} has just redeemed a code: ${code}`};
+    const message = {content: `${name} has just redeemed a code: ${code}.`};
     fetch(webhookURL, {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
