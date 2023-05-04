@@ -23,7 +23,9 @@ submitBtn.addEventListener('click', () => {
       body: JSON.stringify(message),
     });
     statusMsg.textContent = 'Code redeemed successfully!';
+    statusMsg.style.color = 'green';
   } else {
     statusMsg.textContent = 'Invalid code.';
+    statusMsg.style.color = 'red';
   }
 });
