@@ -1,70 +1,66 @@
 body {
-  background-color: #111;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .container {
   max-width: 600px;
   margin: 0 auto;
+  padding: 2rem;
   text-align: center;
-  padding-top: 100px;
 }
 
 h1 {
-  margin-bottom: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
-.input-wrapper {
+.form {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
 }
 
 input[type="text"] {
-  padding: 10px;
-  margin-right: 10px;
-  border: 2px solid #fff;
-  background-color: transparent;
-  color: #fff;
-  font-size: 16px;
-  width: 250px;
-}
-
-input[type="text"]:focus {
-  outline: none;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #000;
+  border-radius: 0.25rem;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 0.5rem 1rem;
   border: none;
-  background-color: #fff;
-  color: #111;
-  font-size: 16px;
+  border-radius: 0.25rem;
   cursor: pointer;
 }
 
-.toggle-wrapper {
+button#redeem-btn {
+  background-color: #000;
+  color: #fff;
+}
+
+button#dark-mode-btn {
+  background-color: #000;
+  color: #fff;
+}
+
+button#light-mode-btn {
+  background-color: #fff;
+  color: #000;
+}
+
+.modes {
   display: flex;
   justify-content: center;
-}
-
-#dark-mode-btn {
-  background-color: #111;
-  color: #fff;
-  margin-left: 10px;
-}
-
-#dark-mode-btn:hover {
-  background-color: #333;
-}
-
-#light-mode-btn:hover {
-  background-color: #eee;
-  color: #111;
-}
-
-#redeem-btn:hover {
-  background-color: #eee;
-  color: #111;
 }
