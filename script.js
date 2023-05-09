@@ -1,7 +1,7 @@
 document.body.style.backgroundColor = "#343434"; // Replace with desired color code
 
 // Define an array of valid codes
-const validCodes = ['sc0ttl0v3sbutt3r', 'fakecode', 'alsofakecode'];
+const validCodes = ['sc0ttl0v3sbutt3r', 'fR3ePr0XXYpA$$', 'alsofakecode'];
 
 // Get form elements
 const nameField = document.getElementById('name');
@@ -10,7 +10,7 @@ const submitBtn = document.getElementById('submit-btn');
 const statusMsg = document.getElementById('status');
 
 // Define cooldown time in seconds
-const COOLDOWN_TIME = 15;
+const COOLDOWN_TIME = 25;
 
 // Create an object to store cooldowns for each user
 const cooldowns = {};
@@ -25,7 +25,7 @@ submitBtn.addEventListener('click', () => {
     // Check if the user is on cooldown
     if (cooldowns.hasOwnProperty(name) && (Date.now() - cooldowns[name]) < (COOLDOWN_TIME * 1000)) {
       const remainingTime = Math.ceil(((COOLDOWN_TIME * 1000) - (Date.now() - cooldowns[name])) / 1000);
-      statusMsg.textContent = `You are on cooldown for ${remainingTime} seconds.`;
+      statusMsg.textContent = `You're on cooldown for ${remainingTime} seconds.`;
     } else {
       // If the code is valid and the user is not on cooldown, redeem the code and set a new cooldown for the user
       const webhookURL = 'https://discord.com/api/webhooks/1103472689617838100/0QvS9NMwI57qHCzEQ7C9JZmn1ftE3x_HvAB3JrwOIYBq8cE8htVYjqfphmlskbU0t4RY'; // Replace with your own webhook URL
